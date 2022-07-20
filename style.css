@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(10, 100%, 74%);
+  background-image: url("./images/bg-intro-desktop.png");
+
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.container > div {
+  flex: 1;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+p {
+  opacity: 0.8;
+  font-size: 15px;
+}
+.box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.box p {
+  text-align: center;
+  margin: 0;
+}
+.box-blue {
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px rgb(85, 83, 83);
+}
+.form-control {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-control small {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  text-align: right;
+  opacity: 0;
+  color: #bbb;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+  font-family: "Poppins", sans sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+input:active {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+  font-family: "Poppins", sans sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid hsl(154, 59%, 45%);
+  color: white;
+  transition: trabsform 0.4s ease;
+  box-shadow: 0 2px hsl(154, 59%, 45%);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button:focus {
+  outline: none;
+}
+
+button:active {
+  border-bottom-width: 1px;
+  transform: translateY(2px);
+}
+small {
+  display: block;
+  color: #bbb;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+small a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 844px) {
+  main {
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  #box1 {
+    align-self: center;
+  }
+
+  input {
+    margin: 1em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  #box1 {
+    align-self: center;
+  }
+
+  input {
+    margin: 1em;
+  }
+}
